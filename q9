@@ -1,0 +1,22 @@
+A = [10, 20, 30, 50, 40]
+
+def quicksort(A):
+    if A == []:
+        return []
+    else:
+        pivot = A[0]
+        less = []
+        more = []
+        for x in A[1:]:
+            if x < pivot:
+                less.append(x)
+            else:
+                more.append(x)
+        less = quicksort(less)
+        more = quicksort(more)
+        return less + [pivot] + more
+
+k = int(input("Enter k: "))
+sorted_array = quicksort(A)
+
+print(sorted_array[k-1])
