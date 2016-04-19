@@ -1,0 +1,11 @@
+test_array = [1, 2, 3, 4, 6]
+integer = int(input("Enter integer: "))
+running = False
+for i in test_array:
+    if integer == i:
+        running = True
+        print("Exists")
+        break
+
+if running == False:
+    print("Does not exist")
