@@ -14,7 +14,7 @@ def quicksort(A):
                 more.append(x)
         less = quicksort(less)
         more = quicksort(more)
-        return less + [pivot] + more
+        return more + [pivot] + less
 
 k = int(input("Enter k: "))
 sorted_array = quicksort(A)
