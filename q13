@@ -1,1 +1,15 @@
 
+array = [1, 2, 3, 4, 5]
+
+highest1 = 0
+highest2 = 0
+for x in array:
+    if x > highest1:
+        highest1 = x
+array.remove(highest1)
+for x in array:
+    if x > highest2:
+        highest2 = x
+
+print(highest1)
+print(highest2)
