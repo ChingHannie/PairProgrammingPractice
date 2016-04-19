@@ -1,0 +1,10 @@
+A = [1, 2, 1, 2, 3, 4, 5]
+seen = []
+
+for x in A:
+    if x not in seen:
+        seen.append(x)
+
+number_duplicates = len(A) - len(seen)
+
+print(number_duplicates)
